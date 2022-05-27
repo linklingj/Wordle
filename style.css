@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green: #6aaa64;
+    --yellow: #c9b458;
+    --gray: #86888a;
+    --white: #fff;
+    --black: #212121;
+    --color-tone1: #121213;
+}
+
+body {
+    background-color: var(--color-tone1);
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-y: hidden;
+}
+
+main {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.container {
+    height: 100%;
+}
+
+.title {
+    color: var(--white);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem, 1rem;
+}
+
+#board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.square {
+    border: 2px solid var(--gray);
+    min-width: 60px;
+    min-height: 60px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    background: var(--green);
+    border: none;
+}
+.yellow {
+    background: var(--yellow);
+    border: none;
+}
+.gray {
+    background: var(--gray);
+    border: none;
+}
+
+#keyboard-container {
+    height: 200px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+
+.keyboard-row button {
+    font-family: inherit;
+    font-weight: bold;
+    height: 58px;
+    width: 40px;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background-color: var(--gray);
+    color: var(--white);
+    text-transform: uppercase;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+}
