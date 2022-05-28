@@ -39,7 +39,6 @@ header {
 
 .title {
     color: var(--white);
-    text-align: center;
     font-size: 2.5rem;
     margin: 1rem, 1rem;
 }
@@ -82,15 +81,15 @@ header {
 
 .green {
     background: var(--green);
-    border: none;
+    border: 2px solid var(--green);
 }
 .yellow {
     background: var(--yellow);
-    border: none;
+    border: 2px solid var(--yellow);
 }
 .gray {
     background: var(--gray);
-    border: none;
+    border: 2px solid var(--gray);
 }
 
 #keyboard-container {
@@ -119,4 +118,19 @@ header {
     margin-right: 6px;
     border-radius: 4px;
     user-select: none;
+}
+
+footer {
+    color: var(--white);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#goto {
+    color: var(--white);
+    text-decoration: none;
 }
